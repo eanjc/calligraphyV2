@@ -38,6 +38,6 @@ def draw_random_sketch(zi, nlines, imgsize, start_p_cir, end_p_cir, start_p_radi
 
 
 if __name__ == "__main__":
-    nlines, imgsize, start_p_cir, end_p_cir, start_p_radius, end_p_radius, minth, maxth = calc_min_inc_cir("bu")
+    nlines, imgsize, start_p_cir, end_p_cir, start_p_radius, end_p_radius, minth, maxth = calc_min_inc_cir("tian")
     npics = 100
-    draw_random_sketch("bu", nlines, (512, 512), start_p_cir, end_p_cir, start_p_radius, end_p_radius, minth, maxth, npics, 0.5)
+    draw_random_sketch("tian", nlines, (512, 512), start_p_cir, end_p_cir, start_p_radius, end_p_radius, minth, maxth, npics, 0.5)

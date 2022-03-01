@@ -11,6 +11,8 @@ import math
 def calc_arg_by_2points(p1, p2):
     vec = (p2[0]-p1[0], p2[1]-p1[1])
     r = math.hypot(vec[0], vec[1])
+    if r == 0:
+        r = 1
     x = vec[0]
     y = vec[1]
     costh = x/r
@@ -115,7 +117,7 @@ def show_sample(nlines, imgsize, start_p_cir, end_p_cir, start_p_radius, end_p_r
 
 
 def main():
-    nlines, imgsize, start_p_cir, end_p_cir, start_p_radius, end_p_radius, minth, maxth = calc_min_inc_cir("bu")
+    nlines, imgsize, start_p_cir, end_p_cir, start_p_radius, end_p_radius, minth, maxth = calc_min_inc_cir("tian")
     print(minth)
     print(maxth)
     show_sample(nlines, imgsize, start_p_cir, end_p_cir, start_p_radius, end_p_radius)

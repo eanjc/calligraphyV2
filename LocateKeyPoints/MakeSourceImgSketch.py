@@ -70,4 +70,4 @@ def draw_source_img_sketch(zi):
 
 
 if __name__ == "__main__":
-    draw_source_img_sketch("bu")
+    draw_source_img_sketch("tian")
